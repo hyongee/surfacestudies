@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+:root {
+  font-family: "Noto Sans JP", system-ui, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-feature-settings: "palt";
+  letter-spacing: .03em;
+
+  --font-size--xs: .75rem;
+  --font-size--sm: .875rem;
+  --font-size--md: 1rem;
+  --font-size--lg: 1.25rem;
+  --font-size--xl: 1.75rem;
+
+  --color--black: #000;
+  --color--gray: #757575;
+  --color--white: #fff;
+
+  --line-height--xs: 1;
+  --line-height--sm: 1.25;
+  --line-height--md: 1.5;
+  --line-height--lg: 1.8;
+
+  --font-weight--regular: 400;
+  --font-weight--bold: 800;
+
+  color: var(--color--black);
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-weight--bold);
+}
+
+.heading--soft {
+  font-size: var(--font-size--lg);
+  line-height: var(--line-height--sm);
+}
+
+.heading--loud {
+  font-size: var(--font-size--xl);
+  line-height: var(--line-height--sm);
+}
+
+.verticalheading--soft {
+  font-size: var(--font-size--sm);
+  writing-mode: vertical-rl;
+  line-height: var(--line-height--xs);
+}
+
+.verticalheading--loud {
+  font-size: 4vw;
+  writing-mode: vertical-rl;
+  line-height: var(--line-height--sm);
+}
+
+.sub {
+  font-size: var(--font-size--xs);
+  line-height: var(--line-height--sm);
+}
+
+.annotation {
+  color: var(--color--gray);
+  font-size: var(--font-size--xs);
+  line-height: var(--line-height--md);
+}
+
+.paragraph--soft {
+  font-size: var(--font-size--xs);
+  line-height: var(--line-height--lg);
+  text-align: justify;
+}
+
+.paragraph--normal {
+  line-height: var(--line-height--lg);
+  text-align: justify;
+}
+
+/* 画面幅いっぱいのボックス */
+.layout--full {
+  padding: 0;
+}
+
+/* コンテンツエリア */
+.layout--body {
+  max-width: 1728px;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+}
+
+.divider {
+  border-bottom: solid 1px var(--color--black);
+}
+
+/* Large Screen - - - - - - - - - - - - - - - - - - - - - */
+
+@media (min-width:800px) {
+
+  .footer img {
+    position: absolute;
+    width: 46vw;
+    min-width: 40rem;
+    bottom: 0;
+    right: 2rem;
+  }
+
+}
+
+/* Small Screen - - - - - - - - - - - - - - - - - - - - - */
+
+@media (max-width:799px) {
+  :root {
+    letter-spacing: .01em;
+    font-feature-settings: "initial";
+  }
+
+  .verticalheading--loud {
+    font-size: 8vw;
+  }
+}
