@@ -7,4 +7,12 @@ export default defineConfig({
     },
     hmr: true,
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        parallax: 'parallax.html', // ← 他のhtmlをここで指定
+      }
+    }
+  }
 });
