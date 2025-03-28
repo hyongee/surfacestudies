@@ -44,6 +44,37 @@
     z-index: 100;
 }
 
+.centered-image {
+    padding: 15vw 0 25vw 0;
+}
+
+.centered-image__title {
+    grid-column: 2 / span 7;
+}
+
+.centered-image__content {
+    grid-column: 10 / span 14;
+    display: flex;
+    column-gap: 2rem;
+}
+
+.centered-image__imagebox {
+    width: 65%;
+    flex-shrink: 0;
+    aspect-ratio: 3 / 2;
+    background-color: coral;
+    overflow: hidden;
+    position: relative;
+}
+
+.centered-image img {
+    height: calc(100% + 480px);
+    /* object-fit: cover; */
+    position: absolute;
+    top: -200px;
+    left: -240px;
+}
+
 .footer {
     height: 36rem;
     background-color: #0D0D0D;

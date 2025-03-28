@@ -15,3 +15,13 @@ gsap.to(".overall-image > img", {
         scrub: true
     }
 });
+gsap.to(".centered-image img", {
+    y: 320,
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".centered-image",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true
+    }
+});
