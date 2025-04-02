@@ -100,20 +100,6 @@ h4 {
   border-bottom: solid 1px var(--color--black);
 }
 
-/* Large Screen - - - - - - - - - - - - - - - - - - - - - */
-
-@media (min-width:800px) {
-
-  .footer img {
-    position: absolute;
-    width: 46vw;
-    min-width: 40rem;
-    bottom: 0;
-    right: 2rem;
-  }
-
-}
-
 /* Small Screen - - - - - - - - - - - - - - - - - - - - - */
 
 @media (max-width:799px) {
@@ -124,5 +110,10 @@ h4 {
 
   .verticalheading--loud {
     font-size: 8vw;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
   }
 }
