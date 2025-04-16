@@ -12,6 +12,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         parallax: 'parallax.html', // ← 他のhtmlをここで指定
+        textanimation: 'text-animation.html', // ← 他のhtmlをここで指定
       }
     }
   }

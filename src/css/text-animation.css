@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=New+Amsterdam&display=swap');
+.blank{
+    height: 100vh;
+    padding: 0 2.5rem;
+    display: flex;
+    align-items: center;
+}
+.headingwrapper{
+    margin-top: 9rem;
+    padding: 0 2.5rem;
+}
+.heading-en--huge{
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-size: min(14.5vw , 16rem);
+    line-height: 1;
+    letter-spacing: -.45rem;
+    border-bottom: solid 1px var(--color--black);
+    padding-bottom: .25rem;
+    overflow: hidden;
+}
+.heading-en--huge span{
+display: inline-block;
+transform:translateY(-12rem) ;
+}
